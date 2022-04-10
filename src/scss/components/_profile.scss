@@ -170,4 +170,12 @@
       width: 100%;
     }
   }
+  .profile--loaded.--active {
+    .picture__container {
+      .barrel__container {
+        top: 12rem;
+        left: 2.5rem;
+      }
+    }
+  }
 }
