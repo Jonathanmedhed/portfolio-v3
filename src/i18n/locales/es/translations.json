@@ -1,11 +1,14 @@
 {
   "global": {
     "ab0ut": "Acerca de",
+    "ab0utOption": "Perfil",
     "ab0utMe": "Soy <0>{{myName}}</0>, realmente disfruto creando sitios web, me encanta un trabajo que es desafiante y me ayuda a continuar mejorando mis habilidades, mientras ayudo a mi empleador a lograr sus objetivos.",
     "4g3": "Edad",
-    "bachDegComp": "Licenciatura en Informática",
+    "bachDegComp": "Bachelor en Informática",
     "biekosPage": "Biekos (Colaborador)",
     "biekosInfo": "Aplicación web para el dolor crónico",
+    "biekosWebsite": "Biekos (Colaborador)",
+    "biekosWebsiteInfo": "Web corporativa Biekos",
     "collProj": "Proyecto universitario",
     "collProjExp": "Sitio web de pedido de suministros.",
     "c0nt4ct": "Contacto",

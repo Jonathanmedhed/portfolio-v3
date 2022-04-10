@@ -1,11 +1,14 @@
 {
   "global": {
     "ab0ut": "About",
+    "ab0utOption": "About",
     "ab0utMe": "I am <0>{{myName}}</0>, i really enjoy building websites, love a job that is challenging and helps me continue improving my skills, while helping my employer achieve their goals.",
     "4g3": "Age",
     "bachDegComp": "Bachelor's Degree in Computer Science",
     "biekosPage": "Biekos (Contributor)",
     "biekosInfo": "Web app for chronic pain",
+    "biekosWebsite": "Biekos (Contributor)",
+    "biekosWebsiteInfo": "Biekos corporate website",
     "collProj": "College Project",
     "collProjExp": "Supply ordering website.",
     "c0nt4ct": "Contact",

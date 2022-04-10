@@ -1,14 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const Navbar = ({ goTo, active, option, currentLanguage }) => {
+const Navbar = ({ goTo, active, option }) => {
   const { t } = useTranslation();
 
   const options = [
     {
       name: "about",
       icon: "fas fa-user",
-      content: t("global.ab0ut"),
+      content: t("global.ab0utOption"),
     },
     {
       name: "resume",

@@ -7,14 +7,25 @@ import ProjectCard from "../ProjectCard";
 
 // Images
 import heddrichImg from "../../images/heddrichITSolutions.png";
-import ecommerceImg from "../../images/eCommerceImg.png";
+/* import ecommerceImg from "../../images/eCommerceImg.png"; */
 import myOnlineShopImg from "../../images/myonlineshop.png";
 import portfolioImg from "../../images/portfolio.png";
 import easyPeasyImg from "../../images/easypeasy.png";
 import biekosImg from "../../images/biekos-page.png";
+import biekosWeb from "../../images/biekos-website.png";
 
 const Projects = ({ option }) => {
   const { t } = useTranslation();
+
+  /* 
+    {
+      img: ecommerceImg,
+      month: t("months.moNov"),
+      year: "2020",
+      title: t("global.eCommWeb"),
+      content: t("global.eCommWebExp"),
+      link: "https://ecommercespanish.herokuapp.com/",
+    }, */
 
   const projects = [
     {
@@ -25,20 +36,19 @@ const Projects = ({ option }) => {
       link: "https://app.biekos.com/home",
     },
     {
+      img: biekosWeb,
+      year: "2022",
+      title: t("global.biekosWebsite"),
+      content: t("global.biekosWebsiteInfo"),
+      link: "https://biekos.com/",
+    },
+    {
       img: heddrichImg,
       month: t("months.moDec"),
       year: "2020",
       title: t("global.w3bD3vS3rv1c3s"),
       content: t("global.WebDevExp"),
       link: "https://heddrichitsoluciones.herokuapp.com/",
-    },
-    {
-      img: ecommerceImg,
-      month: t("months.moNov"),
-      year: "2020",
-      title: t("global.eCommWeb"),
-      content: t("global.eCommWebExp"),
-      link: "https://ecommercespanish.herokuapp.com/",
     },
     {
       img: myOnlineShopImg,
