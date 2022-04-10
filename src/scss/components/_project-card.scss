@@ -1,0 +1,63 @@
+@import "../config";
+@import "../utilities";
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 17rem;
+  min-width: 17rem;
+  padding-bottom: 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 1px 1px 1px 1px $font-color;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 8rem;
+  }
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    .project-body__date {
+      height: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .date {
+      border: solid 1px $primary-color;
+      border-radius: 1rem;
+      color: $primary-color;
+      padding: 0 0.3rem;
+      font-size: 0.7rem;
+    }
+    .project-body__title {
+      height: 3rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-body__text {
+      height: 3.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      color: $gray-darker-color;
+      text-align: center;
+    }
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+}

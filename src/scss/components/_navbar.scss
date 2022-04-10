@@ -1,0 +1,111 @@
+@import "../config";
+@import "../utilities";
+
+.navbar,
+.navbar.--active {
+  .my-info {
+    display: none;
+  }
+  .options {
+    display: flex;
+    flex-direction: row;
+    background-color: $white-light-color;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 1px 1px $font-color;
+    .option,
+    .option-selected {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.8rem 0.8rem 0.6rem 0.8rem;
+      border-right: solid 1px $gray-color;
+      color: $font-color;
+      font-weight: 600;
+      text-transform: capitalize;
+      &:last-child {
+        border-right: none;
+      }
+      &:active {
+        color: $white-color;
+        background-color: $primary-color;
+        cursor: pointer;
+      }
+      .text {
+        margin-top: 0.2rem;
+        font-size: 1rem;
+      }
+    }
+    .option-selected {
+      color: $white-color;
+      background-color: $primary-color;
+      font-weight: bold;
+    }
+    .option {
+      cursor: pointer;
+    }
+    .option-selected {
+      cursor: auto;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  &.--active {
+    .options {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1rem;
+      margin-top: 0;
+      .option,
+      .option-selected {
+        padding: 0.8rem 0.3rem 0.4rem 0.3rem;
+        border-right: none;
+        border-bottom: solid 1px $gray-color;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .navbar {
+    width: 100%;
+    margin: 0.1rem 0 0 0;
+    .options {
+      display: flex;
+      flex-direction: row !important;
+      margin-right: 0 !important;
+      margin-top: 0;
+      box-shadow: none !important;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      .option,
+      .option-selected {
+        width: 25%;
+      }
+      .option,
+      .option-selected {
+        border-right: solid 2px $primary-color !important;
+        border-bottom: solid 2px $primary-color !important;
+        &:last-child {
+          border-right: none !important;
+        }
+      }
+    }
+
+    &.--active {
+      .options {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}

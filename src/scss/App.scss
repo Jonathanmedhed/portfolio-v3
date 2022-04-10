@@ -1,0 +1,208 @@
+@import "config";
+@import "utilities";
+@import "./components/input-switch";
+@import "./components/navbar";
+@import "./components/profile";
+@import "./components/section";
+@import "./components/info-card";
+@import "./components/project-card";
+@import "./components/contact-card";
+@import "./components/icons-card";
+@import "./cat-pop-up";
+
+/** Main Config */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: $primary-color;
+  color: #333;
+  // Scrollbar
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color $white-color;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white-dark-color;
+    border-radius: 0.2rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 6px;
+    border: 1px solid $white-color;
+  }
+}
+a {
+  text-decoration: none; //remove underline
+  cursor: pointer;
+}
+ul {
+  list-style: none; //remove bullet points
+}
+img {
+  width: 100%; //take full width of container
+}
+
+input,
+select,
+textarea {
+  border: solid 2px $primary-color;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+/**
+Main
+*/
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+  padding: 2rem 0;
+
+  .main__content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.--active {
+    flex-direction: row;
+    .main__content {
+      flex-direction: row;
+    }
+  }
+
+  .sections {
+    min-width: 40rem;
+    max-width: 40rem;
+    min-height: 25rem;
+    max-height: 25rem;
+    display: none;
+    .top {
+      font-size: 1.7rem;
+      font-weight: bold;
+      span {
+        color: $primary-color;
+      }
+      &.--sm {
+        font-size: 1.6rem;
+      }
+      &.--reverse {
+        color: $primary-color;
+        span {
+          color: $font-color;
+        }
+      }
+      &.--button {
+        font-size: 1.2rem;
+        border: double 2px transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(white, white),
+          linear-gradient(to right, $font-color, $primary-color);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        .content {
+          padding: 0.2rem 0.5rem;
+        }
+      }
+      &.--centered {
+        margin-top: 1rem;
+        align-self: center;
+      }
+    }
+  }
+  &.--active {
+    .sections {
+      display: flex;
+    }
+  }
+}
+
+.title-hor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  color: $primary-color;
+}
+
+@media (max-width: 1400px) {
+  .main {
+    max-width: 40rem;
+    height: unset;
+    min-height: 100vh;
+    margin: 0 auto;
+    &.--active {
+      .main__content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-shadow: 0 0 1px $font-color;
+        box-shadow: 0 0 1px $font-color;
+        border-radius: 1rem;
+      }
+    }
+    .main__content {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      -webkit-box-shadow: 0 0 1px $font-color;
+      box-shadow: 0 0 1px $font-color;
+      border-radius: 1rem;
+    }
+    .sections {
+      min-width: 40rem;
+      max-width: 40rem;
+      min-height: unset;
+      max-height: unset;
+      border-top: solid 2px $primary-color;
+    }
+    &.--active {
+      height: unset;
+      min-height: 100vh;
+      flex-direction: column-reverse;
+      .profile--loaded {
+        order: 2;
+      }
+      .navbar.--active {
+        order: 1;
+      }
+      .section {
+        order: 3;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    max-width: unset;
+    width: 100%;
+    .main__content {
+      width: 90%;
+    }
+    .sections {
+      min-width: unset;
+      max-width: unset;
+      width: 100%;
+    }
+  }
+}

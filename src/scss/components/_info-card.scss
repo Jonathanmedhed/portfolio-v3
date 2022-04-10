@@ -1,0 +1,74 @@
+@import "../config";
+@import "../utilities";
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0.5rem 0;
+    .card-top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .card-top-left {
+        display: flex;
+        flex-direction: column;
+        .date {
+          border: solid 1px $primary-color;
+          border-radius: 0.2rem;
+          color: $primary-color;
+          padding: 0 0.2rem;
+          font-size: 0.8rem;
+          align-self: baseline;
+        }
+        .card-title {
+          margin-top: 0.2rem;
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+          font-weight: bold;
+        }
+        .card-sub-title {
+          font-size: 1.2rem;
+        }
+        .location {
+          font-size: 1rem;
+          color: $gray-darker-color;
+        }
+      }
+      img {
+        max-width: 10rem;
+        object-fit: cover;
+      }
+      .tall-logo {
+        max-width: 5rem;
+        object-fit: cover;
+        margin-right: 3rem;
+      }
+      .big-img {
+        max-width: 5rem;
+        object-fit: cover;
+        margin-right: 2rem;
+      }
+    }
+    .card-body {
+      margin-top: 1rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card-line {
+      height: 0.2rem;
+      width: 5rem;
+      background-color: $primary-color;
+      border-radius: 1rem;
+      align-self: center;
+      margin-top: 0.5rem;
+    }
+  }
+}

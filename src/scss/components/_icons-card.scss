@@ -1,0 +1,148 @@
+@import "../config";
+@import "../utilities";
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+  .card-icon-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .card__icon {
+      min-width: 3rem;
+      min-height: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.5rem;
+      background-color: $primary-color;
+      border-radius: 50%;
+      i {
+        font-size: 1.5rem;
+        color: $white-color;
+      }
+    }
+  }
+  .items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    padding: 1rem 0;
+    .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      i {
+        font-size: 1.2rem;
+        border-radius: 50%;
+        margin-right: 0.2rem;
+      }
+      .fab.fa-python {
+        background-color: rgba(4, 0, 211, 0.808);
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-react {
+        background-color: rgb(0, 211, 211);
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-github-alt {
+        background-color: orangered;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-html5 {
+        background-color: orangered;
+        color: $white-light-color;
+        padding: 0.5rem 0.65rem;
+      }
+      .fab.fa-css3-alt {
+        background-color: $primary-color;
+        color: $white-light-color;
+        padding: 0.5rem 0.65rem;
+      }
+      .fab.fa-sass {
+        background-color: pink;
+        color: $white-light-color;
+        padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+      }
+      .fas.fa-step-forward {
+        background-color: black;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-node-js {
+        background-color: $success-light-color;
+        color: $white-light-color;
+        padding: 0.5rem 0.5rem 0.5rem 0.55rem;
+      }
+      .fas.fa-leaf {
+        background-color: $success-color;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fas.fa-republican {
+        background-color: rgb(0, 119, 255);
+        color: $white-light-color;
+        padding: 0.5rem 0.4rem 0.5rem 0.45rem;
+      }
+      .fab.fa-js-square {
+        background-color: gold;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-aws {
+        background-color: gold;
+        color: $white-light-color;
+        padding: 0.5rem 0.4rem;
+      }
+      .fas.fa-heading {
+        background-color: purple;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-digital-ocean {
+        background-color: blue;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .fab.fa-etsy {
+        background-color: blue;
+        color: $white-light-color;
+        padding: 0.5rem 0.6rem;
+      }
+      .fab.fa-phabricator {
+        background-color: #4a5f88;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      .far.fa-check-square {
+        background-color: #43b02a;
+        color: $white-light-color;
+        padding: 0.5rem;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../config";
+@import "../utilities";
+
+.item-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  i {
+    border: solid 2px $primary-color;
+    border-radius: 50%;
+    color: $primary-color;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .data {
+    font-weight: bold;
+    word-break: break-all;
+    color: #333;
+  }
+}
