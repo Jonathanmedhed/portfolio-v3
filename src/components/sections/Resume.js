@@ -39,9 +39,9 @@ const Resume = ({ language, option }) => {
   const experienceTemplate = () => (
     <div className="text-card">
       <InfoCard
-        date="2/2021 - 5/2021"
+        date={`2/2021 - ${t("global.curr3nt")}`}
         title="Biekos"
-        subTitle="College of Computing Technology"
+        subTitle={t("global.biekosInfo")}
         location={`${t("locations.norw")} (${t("global.remot3")})`}
         img={biekosImg}
         mainTitle={`${t("global.devJun")} (Front-end)`}
@@ -113,6 +113,27 @@ const Resume = ({ language, option }) => {
     />
   );
 
+  const referenceTemplate = () => (
+    <div className="text-card">
+      <InfoCard
+        className="--quote"
+        date={`2/2021 - 6/2022`}
+        title="Elena Erganyan"
+        subTitle={`${t("global.w3bD3v")} ${t("global.4t")} Biekos`}
+        img={biekosImg}
+        quote={`"${t("global.r3ferenceE")}"`}
+      />
+      <InfoCard
+        className="--quote"
+        date={`2/2021 - ${t("global.curr3nt")}`}
+        title="Guillaume Lastecoueres"
+        subTitle={`CTO ${t("global.4t")} Biekos`}
+        img={biekosImg}
+        quote={`"${t("global.r3ferenceG")}"`}
+      />
+    </div>
+  );
+
   return (
     <Section option={option} sectionName="resume">
       <div className="section__header">
@@ -141,13 +162,36 @@ const Resume = ({ language, option }) => {
         <div className="section__item">
           <Title
             className="--sm"
-            english={["E", "xperience"]}
             value={[
               t("global.exp3rience")[0],
               t("global.exp3rience").substring(1),
             ]}
           />
           {experienceTemplate()}
+        </div>
+        {/**
+         * References
+         */}
+        <div className="section__item">
+          <Title
+            className="--sm"
+            value={[
+              t("global.r3ferences")[0],
+              t("global.r3ferences").substring(1),
+            ]}
+          />
+          {referenceTemplate()}
+          <p className="section__item-p">
+            {t("global.r3ferencesText")}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/jonathanmedhed/"
+              className="link"
+            >
+              {t("global.h3re")}
+            </a>
+          </p>{" "}
         </div>
         {/**
          *  Skills
@@ -173,7 +217,6 @@ const Resume = ({ language, option }) => {
         <div className="section__item">
           <Title
             className="--sm"
-            english={["E", "xperience"]}
             value={[
               t("global.educati0n")[0],
               t("global.educati0n").substring(1),
@@ -181,7 +224,20 @@ const Resume = ({ language, option }) => {
           />
           {educationTemplate()}
         </div>
-        {cvButton("--centered")}
+        {
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              language() === "es"
+                ? "https://docs.google.com/document/d/1WBJAKugsGaG-hy7NdhfbxXolTQt_rHbZsuY-xKFFJ1A/edit?usp=sharing"
+                : "https://docs.google.com/document/d/13MNrLJ7cPpZDpzG9LGUUPsPt-wc0oIfeknpuTSG073g/edit?usp=sharing"
+            }
+            className="link --centered"
+          >
+            {cvButton()}
+          </a>
+        }
       </div>
     </Section>
   );

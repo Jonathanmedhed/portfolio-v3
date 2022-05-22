@@ -70,5 +70,20 @@
       align-self: center;
       margin-top: 0.5rem;
     }
+    &.--quote {
+      .card-top {
+        margin-bottom: 1rem;
+      }
+      p {
+        font-style: italic;
+      }
+      span {
+        font-style: normal;
+        font-weight: bold;
+        margin-left: 0.3rem;
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
   }
 }

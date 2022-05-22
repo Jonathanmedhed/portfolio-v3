@@ -43,11 +43,11 @@ const Contact = ({ option, currentLanguage }) => {
           {mobileIcon(`tel:+582432450361`, "fas fa-phone", "+58-243-2450361")}
           {desktopIcon("fas fa-phone", "+58-243-2450361")}
           {mobileIcon(
-            `https://wa.me/+584126289924`,
+            `https://wa.me/+584128364157`,
             "fab fa-whatsapp",
-            "+58-412-6289924"
+            "+58-412-8364157"
           )}
-          {desktopIcon("fab fa-whatsapp", "+58-412-6289924")}
+          {desktopIcon("fab fa-whatsapp", "+58-412-8364157")}
           {mobileIcon(
             `mailto:jonathanmedhed@gmail.com`,
             "far fa-envelope",

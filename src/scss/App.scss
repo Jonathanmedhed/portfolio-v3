@@ -144,6 +144,10 @@ Main
   color: $primary-color;
 }
 
+.link.--centered {
+  margin: 1rem auto;
+}
+
 @media (max-width: 1400px) {
   .main {
     max-width: 40rem;

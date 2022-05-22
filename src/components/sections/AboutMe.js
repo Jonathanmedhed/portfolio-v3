@@ -9,6 +9,13 @@ const AboutMe = ({ option }) => {
 
   let myName = "Jonathan Medina";
 
+  let now = new Date();
+
+  const getAge = () => {
+    var born = new Date(1987, 11, 4);
+    return now.getFullYear() - born.getFullYear() - 1;
+  };
+
   const intro = () => (
     <div className="text">
       <Trans i18nKey="global.ab0utMe">
@@ -22,7 +29,7 @@ const AboutMe = ({ option }) => {
     <div className="list">
       <div className="item">
         <div className="label">{t("global.4g3")}....</div>
-        <div className="value">33</div>
+        <div className="value">{getAge()}</div>
       </div>
       <div className="item">
         <div className="label">{t("global.r3s1d3nc3")}...</div>
