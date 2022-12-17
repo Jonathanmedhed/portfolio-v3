@@ -72,7 +72,7 @@ const Projects = ({ option }) => {
       year: "2019",
       title: t("global.collProj"),
       content: t("global.collProjExp"),
-      link: "https://easy-peasy-v2.herokuapp.com/",
+      link: "https://easy-peasy-v3.herokuapp.com/",
     },
   ];
 
