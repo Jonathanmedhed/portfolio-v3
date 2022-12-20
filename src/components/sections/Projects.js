@@ -8,7 +8,7 @@ import ProjectCard from "../ProjectCard";
 // Images
 /* import heddrichImg from "../../images/heddrichITSolutions.png"; */
 /* import ecommerceImg from "../../images/eCommerceImg.png"; */
-import myOnlineShopImg from "../../images/myonlineshop.png";
+//import myOnlineShopImg from "../../images/myonlineshop.png";
 //import portfolioImg from "../../images/portfolio.png";
 import easyPeasyImg from "../../images/easypeasy.png";
 import biekosImg from "../../images/biekos-page.png";
@@ -50,7 +50,7 @@ const Projects = ({ option }) => {
       content: t("global.WebDevExp"),
       link: "https://heddrichitsoluciones.herokuapp.com/",
     }, */
-    {
+    /*{
       img: myOnlineShopImg,
       month: t("months.moAug"),
       year: "2020",
@@ -58,6 +58,7 @@ const Projects = ({ option }) => {
       content: t("global.oShopCreateExp"),
       link: "https://myonlineshopvzla.herokuapp.com/",
     },
+    */
     /**{
       img: portfolioImg,
       month: t("months.moFeb"),
