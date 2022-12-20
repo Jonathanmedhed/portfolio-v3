@@ -9,12 +9,16 @@ import Resume from "./Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
+// imgs
+import loadingImg from "../../images/loading.svg";
+
 const Main = () => {
   const { i18n } = useTranslation();
 
   const currentLanguage = () => i18n.language || window.localStorage.i18nextLng;
 
   const [option, setOption] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   const goTo = (section) => {
     if (section === option) {
@@ -58,13 +62,15 @@ const Main = () => {
   };
 
   return (
-    <div className={`main ${option ? "--active" : ""}`}>
-      <div className="main__content">
+    <div className={`main ${option ? "--active" : ""} ${loaded ? '' : '--center-all'}`}>
+      <img alt="loading" className={`loader ${loaded ? '--hide' : ''}`} src={loadingImg}></img>
+      <div className={`main__content ${loaded ? '' : '--hide'}`}>
         {/**
          * Navbar
          */}
         <Navbar
           active={option ? true : false}
+          className={`${loaded ? '' : '--hide'}`}
           currentLanguage={currentLanguage}
           goTo={goTo}
           option={option}
@@ -74,7 +80,10 @@ const Main = () => {
          */}
         <Profile
           active={option ? true : false}
+          className={`${loaded ? '' : '--hide'}`}
           currentLanguage={currentLanguage}
+          loaded={loaded} 
+          setLoaded={setLoaded}
         />
         {/**
          * Sections

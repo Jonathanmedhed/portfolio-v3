@@ -9,7 +9,7 @@ import ProjectCard from "../ProjectCard";
 /* import heddrichImg from "../../images/heddrichITSolutions.png"; */
 /* import ecommerceImg from "../../images/eCommerceImg.png"; */
 import myOnlineShopImg from "../../images/myonlineshop.png";
-import portfolioImg from "../../images/portfolio.png";
+//import portfolioImg from "../../images/portfolio.png";
 import easyPeasyImg from "../../images/easypeasy.png";
 import biekosImg from "../../images/biekos-page.png";
 import biekosWeb from "../../images/biekos-website.png";
@@ -58,14 +58,14 @@ const Projects = ({ option }) => {
       content: t("global.oShopCreateExp"),
       link: "https://myonlineshopvzla.herokuapp.com/",
     },
-    {
+    /**{
       img: portfolioImg,
       month: t("months.moFeb"),
       year: "2020",
       title: t("global.myOldPort"),
       content: t("global.myOldPortExp"),
       link: "https://portfolio-jonathanvzla.herokuapp.com/",
-    },
+    },*/
     {
       img: easyPeasyImg,
       month: t("months.moDec"),

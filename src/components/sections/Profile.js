@@ -6,15 +6,13 @@ import CatPopUp from "../CatPopUp";
 
 // Images
 import profileImg from "../../images/descarga.jpg";
-import loadingImg from "../../images/loading.svg";
 import catBrit from "../../images/cat-brit.png";
 import catMex from "../../images/cat-mexican.png";
 import barrel from "../../images/barrel.png";
 
-const Profile = ({ active }) => {
+const Profile = ({ active, className, loaded, setLoaded }) => {
   const { t } = useTranslation();
 
-  const [loaded, setLoaded] = useState(false);
   const [showCat, setShowCat] = useState(false);
 
   let cats = [
@@ -24,23 +22,22 @@ const Profile = ({ active }) => {
 
   return (
     <div
-      className={`${loaded ? "profile--loaded" : "profile"} ${
-        active ? "--active" : ""
+      className={`${loaded ? "profile__loaded" : "profile"} ${
+        active ? "--active" : `${className ? className : ''}`
       }`}
     >
-      <img alt="loading" className="loader" src={loadingImg}></img>
       <div className="picture__container">
         <img
           alt="profile-pic"
           className="picture"
           onLoad={() => setLoaded(true)}
           src={profileImg}
-        ></img>
+        />
         <div className="barrel__container">
           <CatPopUp box={barrel} cats={cats} start={showCat} />
         </div>
       </div>
-      <div className="profile-body">
+      <div className={`profile-body ${loaded ? '' : '--hide'}`}>
         <LanguageSwitch active={active} onClick={() => setShowCat(true)} />
         <h1>Jonathan Medina</h1>
         <h3>{t("global.w3bD3v")}</h3>

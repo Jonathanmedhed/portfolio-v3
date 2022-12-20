@@ -60,6 +60,10 @@ textarea {
   padding: 0.2rem;
 }
 
+.--hide {
+  display: none;
+}
+
 /**
 Main
 */
@@ -71,6 +75,13 @@ Main
   justify-content: center;
   background-color: $primary-color;
   padding: 2rem 0;
+
+  &.--center-all {
+    background-color: $white-light-color;
+    img {
+      width: 15rem;
+    }
+  }
 
   .main__content {
     display: flex;
@@ -183,7 +194,7 @@ Main
       height: unset;
       min-height: 100vh;
       flex-direction: column-reverse;
-      .profile--loaded {
+      .profile__loaded {
         order: 2;
       }
       .navbar.--active {

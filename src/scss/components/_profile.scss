@@ -1,5 +1,5 @@
 .profile,
-.profile--loaded {
+.profile__loaded {
   display: flex;
   flex-direction: column;
   background-color: $white-light-color;
@@ -87,7 +87,7 @@
   }
 }
 
-.profile--loaded {
+.profile__loaded {
   position: relative;
   .picture {
     display: unset;
@@ -99,7 +99,7 @@
 
 @media (max-width: 1400px) {
   .profile,
-  .profile--loaded {
+  .profile__loaded {
     width: 100%;
     flex-direction: row;
     border-bottom-left-radius: 0;
@@ -136,7 +136,7 @@
     }
   }
 
-  .profile--loaded.--active {
+  .profile__loaded.--active {
     .picture__container {
       .barrel__container {
         top: 11.4rem;
@@ -148,7 +148,7 @@
 
 @media (max-width: 800px) {
   .profile,
-  .profile--loaded {
+  .profile__loaded {
     width: 100%;
     flex-direction: column;
     .picture__container {
@@ -170,7 +170,7 @@
       width: 100%;
     }
   }
-  .profile--loaded.--active {
+  .profile__loaded.--active {
     .picture__container {
       .barrel__container {
         top: 12rem;
