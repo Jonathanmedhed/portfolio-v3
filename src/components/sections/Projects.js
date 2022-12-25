@@ -6,7 +6,7 @@ import Section from "../Section";
 import ProjectCard from "../ProjectCard";
 
 // Images
-/* import heddrichImg from "../../images/heddrichITSolutions.png"; */
+import heddrichImg from "../../images/heddrichITSolutions.png";
 /* import ecommerceImg from "../../images/eCommerceImg.png"; */
 //import myOnlineShopImg from "../../images/myonlineshop.png";
 //import portfolioImg from "../../images/portfolio.png";
@@ -42,14 +42,14 @@ const Projects = ({ option }) => {
       content: t("global.biekosWebsiteInfo"),
       link: "https://biekos.com/",
     },
-   /*  {
+    {
       img: heddrichImg,
       month: t("months.moDec"),
       year: "2020",
       title: t("global.w3bD3vS3rv1c3s"),
       content: t("global.WebDevExp"),
       link: "https://heddrichitsoluciones.herokuapp.com/",
-    }, */
+    },
     /*{
       img: myOnlineShopImg,
       month: t("months.moAug"),
