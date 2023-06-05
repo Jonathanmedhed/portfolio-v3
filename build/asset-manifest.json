@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fefa20d6.css",
+    "main.js": "/static/js/main.72b3f706.js",
+    "static/js/377.167fc23c.chunk.js": "/static/js/377.167fc23c.chunk.js",
+    "static/media/easypeasy.png": "/static/media/easypeasy.5c46a5951548ce5d5092.png",
+    "static/media/cat-mexican.png": "/static/media/cat-mexican.f2eb140db0594584be0a.png",
+    "static/media/cat-brit.png": "/static/media/cat-brit.760ec9fe45e7cd6d9b03.png",
+    "static/media/biekos-website.png": "/static/media/biekos-website.e013011f70c3c616aa77.png",
+    "static/media/UC_logo.png": "/static/media/UC_logo.6e445496ed7cf3663c0c.png",
+    "static/media/biekos-page.png": "/static/media/biekos-page.30e19118e75d1d9a2050.png",
+    "static/media/heddrichITSolutions.png": "/static/media/heddrichITSolutions.f852996e637d74518f72.png",
+    "static/media/british-icon.jpg": "/static/media/british-icon.4f8512ffff6bd5cff98c.jpg",
+    "static/media/descarga.jpg": "/static/media/descarga.2c614e61e18c780e40cc.jpg",
+    "static/media/spanish-icon.png": "/static/media/spanish-icon.4b6d60164b84fd8e393a.png",
+    "static/media/cct.png": "/static/media/cct.77df48805a1258b57a42.png",
+    "static/media/loading.svg": "/static/media/loading.ce197594a4b46175615166c387b0318d.svg",
+    "index.html": "/index.html",
+    "main.fefa20d6.css.map": "/static/css/main.fefa20d6.css.map",
+    "main.72b3f706.js.map": "/static/js/main.72b3f706.js.map",
+    "377.167fc23c.chunk.js.map": "/static/js/377.167fc23c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fefa20d6.css",
+    "static/js/main.72b3f706.js"
+  ]
+}

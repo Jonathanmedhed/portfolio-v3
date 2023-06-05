@@ -62,15 +62,23 @@ const Main = () => {
   };
 
   return (
-    <div className={`main ${option ? "--active" : ""} ${loaded ? '' : '--center-all'}`}>
-      <img alt="loading" className={`loader ${loaded ? '--hide' : ''}`} src={loadingImg}></img>
-      <div className={`main__content ${loaded ? '' : '--hide'}`}>
+    <div
+      className={`main ${option ? "--active" : ""} ${
+        loaded ? "" : "--center-all"
+      }`}
+    >
+      <img
+        alt="loading"
+        className={`loader ${loaded ? "--hide" : ""}`}
+        src={loadingImg}
+      ></img>
+      <div className={`main__content ${loaded ? "" : "--hide"}`}>
         {/**
          * Navbar
          */}
         <Navbar
           active={option ? true : false}
-          className={`${loaded ? '' : '--hide'}`}
+          className={`${loaded ? "" : "--hide"}`}
           currentLanguage={currentLanguage}
           goTo={goTo}
           option={option}
@@ -80,9 +88,9 @@ const Main = () => {
          */}
         <Profile
           active={option ? true : false}
-          className={`${loaded ? '' : '--hide'}`}
+          className={`${loaded ? "" : "--hide"}`}
           currentLanguage={currentLanguage}
-          loaded={loaded} 
+          loaded={loaded}
           setLoaded={setLoaded}
         />
         {/**
