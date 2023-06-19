@@ -48,7 +48,7 @@ const Projects = ({ option }) => {
       year: "2020",
       title: t("global.w3bD3vS3rv1c3s"),
       content: t("global.WebDevExp"),
-      link: "https://heddrichitsoluciones.herokuapp.com/",
+      link: "https://heddrichitsoluciones.vercel.app/",
     },
     /*{
       img: myOnlineShopImg,
